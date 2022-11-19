@@ -1,0 +1,34 @@
+document.getElementById("main").onclick = function() {giveFood()};
+
+function giveFood() {
+    document.img.src = ("young duck.jpg");
+    document.getElementById("click text").innerHTML = "A little bread is good for ducks, but not too much! Give something else?";
+}
+
+
+const img = document.getElementById("main");
+
+img.addEventListener('click', () => {
+
+   
+
+});
+
+oh and if you havent seen () => {, you can use function() { instead
+
+
+function mouseOver() {
+    document.getElementById("main").innerHTML = '<img src="young duck.jpg" />';
+}
+function mouseOut() {
+    document.getElementById("main").innerHTML = '<img src="bread.png" />';
+}
+
+
+<img id="image" src="https://bit.ly/3jFwe3d" onclick="openImg()"> 
+
+function openImg(){
+    var image = document.getElementById('image');
+    var source = image.src;
+    window.open(source);
+}

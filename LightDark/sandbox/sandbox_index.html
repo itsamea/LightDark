@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox</title>
+    <link rel="stylesheet" href="sandbox_css.css">
+</head>
+
+<body>
+    <ul> 
+        <li> This is all CSS: <br> <br> 
+            <div id="hover" class="css">hover + wait</div>  <br> 
+            <div id="hold" class="css">click + hold </div>
+            <p>(Animation is abandoned mid action and onload animation restarts)</p> <br> <br> 
+        </li>
+        <li> This is CSS + JavaScript: 
+            <p>(Hover over the boxes)</p>
+            <div id="spin" class="css"> quickspin </div> <br> 
+            <p>(Animation uninterruptable but also unrepeatable. Onload animation does not restart. 'Inspect' to see which of these is a clone!)</p> <br> <br>
+        </li> 
+        <li> CSS floats + JS setInterval:
+            <p>Floats make divs diplay side-by-side without needing to manually force positions: </p>
+            <div class ="step"></div>
+            <br> <br> 
+        </li>  
+        <li> JS clone loops:
+            <p> Babushka: </p>
+            <div class="step" id="babushka"></div>
+            <br> <br> 
+        </li>
+
+        <li> JS setInterval but make it Async:
+            <p> Dominos: </p>
+            <div class="step" id="domino"></div>
+            <br> <br> 
+        </li>
+
+    </ul>
+
+    <button onclick="poke()">poke</button>
+
+    <img onclick="bonk()" src="bonk.png"></img>
+
+    <script src="sandbox_app.js"></script> <! adding to end of script means content displays first then loads script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>

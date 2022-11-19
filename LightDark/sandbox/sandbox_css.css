@@ -1,0 +1,101 @@
+:root { /* sets global variables for entire page */
+  --grey: #6a757a;
+  --green: #5adea9;
+  --orange: #ff592bf0;
+  --darkgrey:#303030;
+}
+
+*{
+  font-family: monospace;
+}
+@keyframes fadein {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+@keyframes fadeout {
+  /*from {opacity: 100%;} -- does this anyway*/
+  to {opacity: 0%;}
+}
+
+@keyframes togreen {
+  from {background-color: var(--grey);}
+  to {background-color: var(--green);}
+}
+
+@keyframes spin {
+  to {transform: rotateY(360deg);}
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  line-height:100px;
+  text-align: center;
+  background-color: var(--grey);
+  animation-name: fadein;
+  animation-duration: 5s;
+}
+
+
+#hover:hover{
+  animation-name: togreen;
+  animation-duration: 5s;
+}
+
+#hold {
+  position: absolute;
+  left: 200px;
+  top: 44.5px;
+}
+
+#hold:active{
+  animation-name: fadeout;
+  animation-duration: 5s;
+}
+
+#spin {
+  width: 30px;
+  height: 30px;
+  font-size: 10px;
+  line-height:75px;
+  background-color: var(--grey);
+}
+
+.largerbox {
+	position: relative;
+  left: 175px;
+  line-height:30px;
+  width: 60px;
+  height: 60px;
+}
+
+button{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  padding: 4px;
+  text-align: center;
+}
+
+img{
+  position: absolute;
+  top: 20%;
+  right: 6%;
+  width: 150px;
+  height: auto;
+}
+
+.step {
+  height: 70px;
+  width: 20px;
+}
+
+
+#babushka {
+  height: 100px;
+  width: 50px;
+  background-color: var(--orange);
+}
+
+/*two animations can't be combined, the last animation is favoured*/
